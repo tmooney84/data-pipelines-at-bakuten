@@ -1,6 +1,7 @@
 ![Bakuten data pipeline animation](ascii-animation.gif)
 
 **Data Pipelines for Bakuten**  
+*Peak-season data ops: fast campaign insights, hourly revenue you can trust.*
 You are a Data Engineer at Bakuten (5M customers, multi-category e-commerce). Leadership wants a reliable ELT (Extract-Load-Transform) pipeline to feed analytics and machine learning (ML) uses such as recommendations, return on investment (ROI) prediction, and fraud detection. Work in two phases: Phase 1 is design (required), Phase 2 is execution (optional).
 
 **Objectives**
