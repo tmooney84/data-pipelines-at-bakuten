@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Customers</h2>
+
+<table border="1">
+<tr>
+  <th>ID</th>
+  <th>Signup</th>
+  <th>Country</th>
+  <th>Segment</th>
+  <th>LTV</th>
+  <th>VIP</th>
+  <th>Opt-In</th>
+</tr>
+{% for c in customers %}
+<tr>
+  <td>{{ c.customer_id }}</td>
+  <td>{{ c.signup_date }}</td>
+  <td>{{ c.country }}</td>
+  <td>{{ c.segment }}</td>
+  <td>{{ "%.2f"|format(c.lifetime_value) }}</td>
+  <td>{{ c.is_vip }}</td>
+  <td>{{ c.marketing_opt_in }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

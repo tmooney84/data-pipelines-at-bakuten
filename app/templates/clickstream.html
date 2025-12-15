@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Clickstream Events</h2>
+
+<table border="1">
+<tr>
+  <th>Event ID</th>
+  <th>Customer</th>
+  <th>Timestamp</th>
+  <th>Type</th>
+  <th>Page</th>
+  <th>Device</th>
+  <th>Source</th>
+  <th>Campaign</th>
+  <th>Category</th>
+</tr>
+
+{% for e in events %}
+<tr>
+  <td>{{ e.event_id }}</td>
+  <td>{{ e.customer_id }}</td>
+  <td>{{ e.event_timestamp }}</td>
+  <td>{{ e.event_type }}</td>
+  <td>{{ e.page }}</td>
+  <td>{{ e.device }}</td>
+  <td>{{ e.traffic_source }}</td>
+  <td>{{ e.campaign }}</td>
+  <td>{{ e.product_category }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
