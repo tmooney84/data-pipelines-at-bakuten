@@ -1,6 +1,6 @@
 ***DEMO APP in the /app folder. Set up the local virtual environment using requirements.txt and then use the command python3 app.py and the endpoints will be hosted locally on port 5000. http://127.0.0.1:5000/ >>> http://127.0.0.1:5000/clickstream
 
-
+![alt text for screen readers](/analytics_infrastructure.jpg "Analytics Infrastructure")
 
 ![Bakuten data pipeline animation](ascii-animation.gif)
 
